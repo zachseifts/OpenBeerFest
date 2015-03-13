@@ -1,0 +1,5 @@
+name = OpenBeerFest
+description = A Drupal Distro that manages your beer festival website.
+core = 7.x
+version = 7.x-1.x
+
