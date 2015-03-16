@@ -10,7 +10,7 @@
 function openbeerfest_core_menu() {
   $items = array();
 
-  $items['admin/config/openbeerfest_core'] = array(
+  $items['admin/config/system/openbeerfest_core'] = array(
     'title' => 'OpenBeerFest Core',
     'description' => 'Configuration for OpenBeerFest distro',
     'page callback' => 'drupal_get_form',

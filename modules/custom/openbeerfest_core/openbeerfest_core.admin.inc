@@ -7,7 +7,12 @@
 function openbeerfest_core_admin() {
   $form = array();
 
-  $form['openbeerfest_core_on_sale'] = array(
+  $form['core'] = array(
+    '#type' => 'fieldset',
+    '#title' => 'Core',
+  );
+
+  $form['core']['openbeerfest_core_on_sale'] = array(
     '#type' => 'select',
     '#title' => t('Are tickets on sale?'),
     '#default_value' => variable_get('openbeerfest_core_on_sale', 0),
