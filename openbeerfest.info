@@ -3,3 +3,20 @@ description = A Drupal Distro that manages your beer festival website.
 core = 7.x
 version = 7.x-1.x
 
+; Core
+; ----
+dependencies[] = block
+dependencies[] = dblog
+dependencies[] = system
+dependencies[] = update
+dependencies[] = user
+
+; Contrib
+; -------
+dependencies[] = admin_menu
+dependencies[] = admin_menu_toolbar
+dependencies[] = remove_generator
+dependencies[] = revision_all
+dependencies[] = permission_watchdog
+dependencies[] = role_watchdog
+dependencies[] = semiclean
