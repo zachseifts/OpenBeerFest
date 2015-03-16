@@ -7,6 +7,7 @@ version = 7.x-1.x
 ; ----
 dependencies[] = block
 dependencies[] = dblog
+dependencies[] = menu
 dependencies[] = system
 dependencies[] = update
 dependencies[] = user
@@ -20,3 +21,7 @@ dependencies[] = revision_all
 dependencies[] = permission_watchdog
 dependencies[] = role_watchdog
 dependencies[] = semiclean
+
+; Custom
+; ------
+dependencies[] = openbeerfest_core

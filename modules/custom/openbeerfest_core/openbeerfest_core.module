@@ -1,0 +1,62 @@
+<?php
+/**
+ * @file
+ * The core module for the OpenBeerFest distro.
+ */
+
+/**
+ * Implements hook_menu()
+ */
+function openbeerfest_core_menu() {
+  $items = array();
+
+  $items['home'] = array(
+    'title' => t('Home'),
+    'page callback' => 'openbeerfest_core_home',
+    'access arguments' => array('access content'),
+    'type' => MENU_CALLBACK,
+    'file' => 'openbeerfest_core.pages.inc'
+  );
+
+  $items['about'] = array(
+    'title' => t('About the High Country Beer Fest'),
+    'page callback' => 'openbeerfest_core_about',
+    'access arguments' => array('access content'),
+    'type' => MENU_CALLBACK,
+    'file' => 'openbeerfest_core.pages.inc'
+  );
+
+  $items['breweries'] = array(
+    'title' => t('Participating Breweries'),
+    'page callback' => 'openbeerfest_core_breweries',
+    'access arguments' => array('access content'),
+    'type' => MENU_CALLBACK,
+    'file' => 'openbeerfest_core.pages.inc'
+  );
+
+  return $items;
+}
+
+/**
+ * Implements hook_theme()
+ */
+function openbeerfest_core_theme() {
+  $themes = array();
+
+  $themes['openbeerfest_core_home'] = array(
+    'variables' => array(),
+    'template' => 'templates/openbeerfest_core_home',
+  );
+
+  $themes['openbeerfest_core_about'] = array(
+    'variables' => array(),
+    'template' => 'templates/openbeerfest_core_about',
+  );
+
+  $themes['openbeerfest_core_breweries'] = array(
+    'variables' => array(),
+    'template' => 'templates/openbeerfest_core_breweries',
+  );
+
+  return $themes;
+}

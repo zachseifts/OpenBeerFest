@@ -1,0 +1,5 @@
+name = OpenBeerFest core
+description = The core module for the OpenBeerFest distro.
+package = OpenBeerFest
+core = 7.x
+version = 7.x-1.x
