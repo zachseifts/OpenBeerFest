@@ -18,22 +18,84 @@ function openbeerfest_core_menu() {
     'file' => 'openbeerfest_core.pages.inc'
   );
 
+  $items['blog'] = array(
+    'title' => t('Our blog'),
+    'page callback' => 'openbeerfest_core_blog',
+    'access arguments' => array('access content'),
+    'type' => MENU_NORMAL_ITEM,
+    'menu_name' => 'main-menu',
+    'file' => 'openbeerfest_core.pages.inc',
+    'weight' => 10,
+  );
+
   $items['about'] = array(
-    'title' => t('About the High Country Beer Fest'),
+    'title' => t('About the festival'),
     'page callback' => 'openbeerfest_core_about',
     'access arguments' => array('access content'),
     'type' => MENU_NORMAL_ITEM,
     'menu_name' => 'main-menu',
     'file' => 'openbeerfest_core.pages.inc',
+    'weight' => 15,
   );
 
   $items['breweries'] = array(
-    'title' => t('Participating Breweries'),
+    'title' => t('The breweries'),
     'page callback' => 'openbeerfest_core_breweries',
     'access arguments' => array('access content'),
     'type' => MENU_NORMAL_ITEM,
     'menu_name' => 'main-menu',
-    'file' => 'openbeerfest_core.pages.inc'
+    'file' => 'openbeerfest_core.pages.inc',
+    'weight' => 20,
+  );
+
+  $items['music'] = array(
+    'title' => t('The music'),
+    'page callback' => 'openbeerfest_core_music',
+    'access arguments' => array('access content'),
+    'type' => MENU_NORMAL_ITEM,
+    'menu_name' => 'main-menu',
+    'file' => 'openbeerfest_core.pages.inc',
+    'weight' => 25,
+  );
+
+  $items['food'] = array(
+    'title' => t('The food'),
+    'page callback' => 'openbeerfest_core_food',
+    'access arguments' => array('access content'),
+    'type' => MENU_NORMAL_ITEM,
+    'menu_name' => 'main-menu',
+    'file' => 'openbeerfest_core.pages.inc',
+    'weight' => 30,
+  );
+
+  $items['seminars'] = array(
+    'title' => t('Our seminars'),
+    'page callback' => 'openbeerfest_core_seminars',
+    'access arguments' => array('access content'),
+    'type' => MENU_NORMAL_ITEM,
+    'menu_name' => 'main-menu',
+    'file' => 'openbeerfest_core.pages.inc',
+    'weight' => 35,
+  );
+
+  $items['sponsors'] = array(
+    'title' => t('Our sponsors'),
+    'page callback' => 'openbeerfest_core_sponsors',
+    'access arguments' => array('access content'),
+    'type' => MENU_NORMAL_ITEM,
+    'menu_name' => 'main-menu',
+    'file' => 'openbeerfest_core.pages.inc',
+    'weight' => 40,
+  );
+
+  $items['contact'] = array(
+    'title' => t('Contact us'),
+    'page callback' => 'openbeerfest_core_contact',
+    'access arguments' => array('access content'),
+    'type' => MENU_NORMAL_ITEM,
+    'menu_name' => 'main-menu',
+    'file' => 'openbeerfest_core.pages.inc',
+    'weight' => 45,
   );
 
   return $items;
@@ -50,6 +112,11 @@ function openbeerfest_core_theme() {
     'template' => 'templates/openbeerfest_core_home',
   );
 
+  $themes['openbeerfest_core_blog'] = array(
+    'variables' => array(),
+    'template' => 'templates/openbeerfest_core_blog',
+  );
+
   $themes['openbeerfest_core_about'] = array(
     'variables' => array(),
     'template' => 'templates/openbeerfest_core_about',
@@ -58,6 +125,31 @@ function openbeerfest_core_theme() {
   $themes['openbeerfest_core_breweries'] = array(
     'variables' => array(),
     'template' => 'templates/openbeerfest_core_breweries',
+  );
+
+  $themes['openbeerfest_core_music'] = array(
+    'variables' => array(),
+    'template' => 'templates/openbeerfest_core_music',
+  );
+
+  $themes['openbeerfest_core_food'] = array(
+    'variables' => array(),
+    'template' => 'templates/openbeerfest_core_food',
+  );
+
+  $themes['openbeerfest_core_seminars'] = array(
+    'variables' => array(),
+    'template' => 'templates/openbeerfest_core_seminars',
+  );
+
+  $themes['openbeerfest_core_sponsors'] = array(
+    'variables' => array(),
+    'template' => 'templates/openbeerfest_core_sponsors',
+  );
+
+  $themes['openbeerfest_core_contact'] = array(
+    'variables' => array(),
+    'template' => 'templates/openbeerfest_core_contact',
   );
 
   return $themes;
