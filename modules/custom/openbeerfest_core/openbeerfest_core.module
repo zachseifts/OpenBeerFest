@@ -1,7 +1,7 @@
 <?php
 /**
  * @file
- * The core module for the OpenBeerFest distro.
+ * The OpenBeerFest Core module file.
  */
 
 /**
@@ -9,6 +9,16 @@
  */
 function openbeerfest_core_menu() {
   $items = array();
+
+  $items['admin/config/openbeerfest_core'] = array(
+    'title' => 'OpenBeerFest Core',
+    'description' => 'Configuration for OpenBeerFest distro',
+    'page callback' => 'drupal_get_form',
+    'page arguments' => array('openbeerfest_core_admin'),
+    'access arguments' => array('access administration pages'),
+    'type' => MENU_NORMAL_ITEM,
+    'file' => 'openbeerfest_core.admin.inc',
+  );
 
   $items['blog'] = array(
     'title' => t('Our blog'),
