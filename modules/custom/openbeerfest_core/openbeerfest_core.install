@@ -1,0 +1,18 @@
+<?php
+/**
+ * @file
+ * The install file for the OpenBeerFest distro.
+ */
+
+/**
+ * Implements hook_install()
+ */
+function openbeerfest_core_install() {
+  variable_set('site_frontpage', 'home');
+}
+
+/**
+ * Implements hook_uninstall()
+ */
+function openbeerfest_core_uninstall() {
+}

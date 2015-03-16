@@ -22,15 +22,17 @@ function openbeerfest_core_menu() {
     'title' => t('About the High Country Beer Fest'),
     'page callback' => 'openbeerfest_core_about',
     'access arguments' => array('access content'),
-    'type' => MENU_CALLBACK,
-    'file' => 'openbeerfest_core.pages.inc'
+    'type' => MENU_NORMAL_ITEM,
+    'menu_name' => 'main-menu',
+    'file' => 'openbeerfest_core.pages.inc',
   );
 
   $items['breweries'] = array(
     'title' => t('Participating Breweries'),
     'page callback' => 'openbeerfest_core_breweries',
     'access arguments' => array('access content'),
-    'type' => MENU_CALLBACK,
+    'type' => MENU_NORMAL_ITEM,
+    'menu_name' => 'main-menu',
     'file' => 'openbeerfest_core.pages.inc'
   );
 
