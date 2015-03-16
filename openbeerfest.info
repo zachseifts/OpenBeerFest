@@ -16,6 +16,8 @@ dependencies[] = user
 ; -------
 dependencies[] = admin_menu
 dependencies[] = admin_menu_toolbar
+dependencies[] = ctools
+dependencies[] = entity
 dependencies[] = remove_generator
 dependencies[] = revision_all
 dependencies[] = permission_watchdog

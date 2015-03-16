@@ -4,6 +4,12 @@ core = 7.x
 projects[admin_menu][subdir] = contrib
 projects[admin_menu][version] = 3.0-rc5
 
+projects[ctools][subdir] = contrib
+projects[ctools][version] = 1.6
+
+projects[entity][subdir] = contrib
+projects[entity][version] = 1.6
+
 projects[remove_generator][subdir] = contrib
 projects[remove_generator][version] = 1.4
 
@@ -24,4 +30,3 @@ projects[semiclean][version] = 1.0
 
 projects[settings_audit_log][subdir] = contrib
 projects[settings_audit_log][version] = 1.2
-
